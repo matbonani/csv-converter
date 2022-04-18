@@ -13,10 +13,12 @@
 <body>
   <div class="container">
     <div class="content">
-        <h3>Conversor de CSV para HTML ou PDF</h3>
-      <div id="convert" style="display: block;">
+      <br><br><br>
+      <div class="card">
+        <h3 class="card-header" align="center">Conversor de CSV para HTML ou PDF</h3>
+        <div class="card-body">
+        <div id="convert" style="display: block;">
         <form method="POST" enctype="multipart/form-data" action="/convert">
-          <img src="/img/files.svg" alt="">
           <h4>Escolha a opção desejada:</h4>
           <div class="options">
             <div class="option">
@@ -28,14 +30,15 @@
             <span>PDF</span>
             </div>
           </div>
-          <label for="file" class="input-label">
-            <span class="text">Selecionar arquivo</span>
-          </label>
+          <br>
           <input type="file" accept=".csv" name="file" id="file">
-          <button type="submit">Converter</button> 
+          <br><br>
+          <button type="submit" class="btn btn-success">Converter</button> 
         </form>
+        </div>
       </div>
         </div>
+      </div>
       </div>
     </div>
   </div>
